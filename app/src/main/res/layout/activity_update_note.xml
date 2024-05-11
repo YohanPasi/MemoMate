@@ -6,36 +6,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".UpdateActivity">
+    tools:context=".UpdateNoteActivity">
 
     <TextView
-        android:id="@+id/updateeditNoteHeading"
+        android:id="@+id/updateNoteHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="Edit Note"
+        android:text="Update Task"
         android:textColor="@color/orange"
         android:textSize="24sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/updatesavveButton"
+        android:id="@+id/updateBtn"
         android:src="@drawable/baseline_done_24"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@id/updateeditNoteHeading"
+        android:layout_alignTop="@id/updateNoteHeading"
         android:layout_marginEnd="60dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/updatetitleEditText"
+        android:id="@+id/updateTitleText"
         android:hint="Enter the Title"
         android:padding="12dp"
         android:textSize="20sp"
-        android:layout_below="@id/updateeditNoteHeading"
+        android:layout_below="@id/updateNoteHeading"
         android:background="@drawable/orange_boader"
         android:layout_marginTop="16dp"
         android:maxLines="1"
@@ -44,18 +44,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/updatecontentEditText"
+        android:id="@+id/updateContentText"
         android:hint="Enter the description"
         android:gravity="top"
         android:padding="12dp"
         android:textSize="18sp"
         android:fontFamily="@font/poppins"
         android:background="@drawable/orange_boader"
-        android:layout_below="@id/updatetitleEditText"
+        android:layout_below="@id/updateTitleText"
         android:layout_marginTop="12dp"/>
-
-
-
 
 
 </RelativeLayout>
